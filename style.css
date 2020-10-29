@@ -1,0 +1,23 @@
+body {
+  background: #666;
+  color: #eee;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.weapon {
+  width: 300px;
+  height: auto;
+}
+
+.result {
+  color: red;
+}
