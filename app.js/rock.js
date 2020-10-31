@@ -9,13 +9,14 @@ let userScissors = document.getElementById("btn-scissors")
 userRock.addEventListener('click', playRockGame);
 
 
+
 function playRockGame(){
     let user = rock
     console.log(user);
     let choices = [`${rock}`, `${paper}`, `${scissors}`]
     let comp = choices[Math.floor(Math.random() * choices.length)];
     console.log(comp);
-
+    
     if (user == rock && comp == scissors) {
         console.log("user wins");
         document.getElementById("result").innerHTML="Computer chose scissors, You Won!!";
