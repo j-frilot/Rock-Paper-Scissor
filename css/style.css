@@ -1,11 +1,20 @@
 body {
   background: #666;
-  color: #eee;
+  color: #000;
   font-size: 20px;
+  font-family: "Turret Road", cursive;
 }
 
 .container {
   text-align: center;
+}
+
+.btn {
+  color: red;
+  font-weight: bold;
+  background-color: #111;
+  border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 .button-section {
