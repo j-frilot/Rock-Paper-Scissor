@@ -6,26 +6,36 @@ let userRock = document.getElementById("btn-rock")
 let userPaper = document.getElementById("btn-paper")
 let userScissors = document.getElementById("btn-scissors")
 
+let userCount = 0
+let compCount = 0
+let userScore = document.querySelector('#user-score')
+let compScore = document.querySelector('#comp-score')
+
 function condition(user, comp) {
 
 
     if (user == rock && comp == scissors) {
         console.log("user wins");
         document.getElementById("result").innerHTML="Computer chose scissors, You Won!!";
+        userCount++
     } else if (user == paper && comp == rock) {
         console.log("user wins");
         document.getElementById("result").innerHTML="Computer chose rock, You Won!!";
+        userCount++
     } else if (user == scissors && comp == paper) {
         console.log("user wins");
         document.getElementById("result").innerHTML="Computer chose paper, You Won!!";
+        userCount++
     } else if (user == comp) {
         console.log("It's a draw");
         document.getElementById("result").innerHTML="Computer chose paper, It's a tie.";
     } else {
         console.log("comp wins")
         document.getElementById("result").innerHTML="Computer chose scissors, You Lose";
+        compCount++
     }
-
+   userScore.textContent = userCount
+   compScore.textContent = compCount
     return
 }
 
