@@ -3,48 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Rock, Paper, Scissors!</h1>
-        </div>
-        <div class="main">
-            <h2>Choose your weapon to play!!</h2>
-            <div class="score">
-                <h3>User: <span id="user-score">0</span></h3>
-                <h3>Computer: <span id="comp-score">0</span></h3>
+    <header class="title">
+        <h1>Rock, Paper, Scissors!</h1>
+        <h2>Choose your weapon to play!!</h2>
+    </header>
+    <main>
+        <section class="score">
+            <h3>User: <span id="user-score">0</span></h3>
+            <h3>Computer: <span id="comp-score">0</span></h3>
+        </section>
+        <div><h3><span class="result" id="result"></span></h3></div>
+        <div class="button-section">
+            <div class="rock">
+                <button id="btn-rock"><img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1603949282/rock%20paper/rock_mplzjx.png" alt="rock" class="weapon"></button>
+                <!-- <button class="btn" id="btn-rock">Rock</button> -->
             </div>
-            <div><h3><span class="result" id="result"></span></h3></div>
-            <div class="button-section">
-                <div class="rock">
-                    <img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1603949282/rock%20paper/rock_mplzjx.png" alt="rock" class="weapon responsive-img">
-                    <button class="btn" id="btn-rock">Rock</button>
-                </div>
-                
-                <div class="paper">
-                    <img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1603949282/rock%20paper/paper_ar8xkl.png" alt="" class="weapon responsive-img">
-                    <button class="btn" id="btn-paper">Paper</button>
-                </div>
-                
-                <div class="scissors">
-                    <img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1603949282/rock%20paper/scissors_sohasm.png" alt="" class="weapon responsive-img">
-                    <button class="btn" id="btn-scissors">Scissors</button>
-                </div>
-                
+            <div class="paper">
+                <button id="btn-paper"><img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1603949282/rock%20paper/paper_ar8xkl.png" alt="" class="weapon"></button>
             </div>
-            
+            <div class="scissors">
+                <button id="btn-scissors"><img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1603949282/rock%20paper/scissors_sohasm.png" alt="" class="weapon"></button>
+            </div>
         </div>
-    </div>
-
+    </main>
     <script src="app.js/rock.js"></script>
 </body>
 </html>

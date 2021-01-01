@@ -1,38 +1,60 @@
 body {
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: "Turret Road", cursive;
+  text-align: center;
   background: #666;
   color: #000;
-  font-size: 20px;
-  font-family: "Turret Road", cursive;
 }
-
-.container {
-  text-align: center;
+h1 {
+  font-size: 3rem;
 }
-
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
 .score {
+  margin: auto;
   display: flex;
   justify-content: space-around;
   border: 4px black dashed;
 }
-
-.btn {
-  color: red;
-  font-weight: bold;
-  background-color: #111;
-  border-radius: 10px;
-  margin-bottom: 100px;
-}
-
 .button-section {
   display: flex;
   justify-content: center;
 }
-
 .weapon {
   width: 300px;
   height: auto;
 }
-
-.result {
-  color: red;
+button {
+  background: transparent;
+  border: dotted black 4px;
+}
+@media screen and (max-width: 768px) {
+  .weapon {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  .weapon {
+    width: 100px;
+  }
 }
